@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import JavaImage from '../assets/java_img.png';
 import CplusImage from '../assets/c++_img.png';
 import PythonImage from '../assets/py_img.png';
-import JavascriptImage from '../assets/js_img.jpg';
+import CImage from '../assets/c_img.png';
 import './Modal.css';
 
 const Modal = ({ showModal, onClose }) => {
@@ -15,8 +15,8 @@ const Modal = ({ showModal, onClose }) => {
     console.log(`Button ${imageName} clicked`);
 
     // Redirect to the corresponding page
-    if (imageName === 'Javascript') {
-      navigate('/javascript'); 
+    if (imageName === 'C') {
+      navigate('/c'); 
     }
     else if (imageName === 'Python') {
       navigate('/python'); 
@@ -48,10 +48,10 @@ const Modal = ({ showModal, onClose }) => {
               onClick={() => handleButtonClick('Python')}
             />
             <img
-              src={JavascriptImage}
-              alt="Javascript"
+              src={CImage}
+              alt="C"
               className="image-button"
-              onClick={() => handleButtonClick('Javascript')}
+              onClick={() => handleButtonClick('C')}
             />
             <img
               src={JavaImage}

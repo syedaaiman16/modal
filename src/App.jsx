@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'; // Import Route, Routes, and Link
 import Modal from './components/modal';
-import Javascript from './components/Javascript';
+import C from './components/C';
 import Python from './components/Python';
 import Java from './components/Java';
 import Cplus from './components/Cplus';
@@ -43,10 +43,10 @@ function App() {
           }
         />
                 <Route
-          path="/javascript"
+          path="/c"
           element={
             <div>
-              <Javascript/>
+              <C/>
               {/* You can add a link back to the home page if needed */}
               <Link to="/">Go back to Home</Link>
             </div>
